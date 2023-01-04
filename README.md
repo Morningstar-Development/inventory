@@ -1,19 +1,28 @@
-# Inventory Decay
+# LJ-Inventory with Decay
+
+# WARNING!!! This script is meant for OLD QBCore prior to the Inventory Updates. I will NOT be supporting this resource, but I will do my best to help where I can.
 
 ![image](https://user-images.githubusercontent.com/80186604/163069477-114e14ec-bec1-4f93-8421-42017c605f15.png)
 
 ## Credits:
->### aj - aj-inventory
->### loljoshie - lj-inventory
->### qbcore - qb-inventory
+>### ihyajb - Original HTML Changes and Edits for NP Inspired (aj-inventory)
+>### loljoshie - Maintaining the current lj-inventory
+>### QBCore - Original Inventory Code
+>### Jay-Fivem - Original lj-inventory with Decay
 
 ## Installation
 
-you need to add a decay and created value in your qb-core/shared/items for all items, the decay is set to be the days the item lasts
+You need to add a decay and created value in your qb-core/shared/items for all items, the decay is set to be the days the item lasts
 
 ```lua
 ["created"] = nil
 ["decay"] = 28.0 -- for 28 days
+```
+
+Example:
+
+```lua
+	['water_bottle'] 				 = {['name'] = 'water_bottle', 			  	  	['label'] = 'Bottle of Water', 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'water_bottle.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,  ['description'] = 'For all the thirsty out there', ["created"] = nil, ["decay"] = 7.0},
 ```
 
 ## Changes to QB-CORE (UPDATED TO LATEST FUNCTION)
